@@ -16,13 +16,21 @@
 
         header {
             text-align: center;
-            padding: 2rem;
-            background: #145a32; /* Forest Green */
+            padding: 4rem 2rem; /* Bigger padding for a grander look */
+            background: linear-gradient(135deg, #145a32, #27ae60); /* Gradient effect */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Header shadow for depth */
+            border-bottom: 3px solid #1e8449; /* Clean bottom border */
         }
 
         h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem; /* Larger font size for emphasis */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); /* Fancy text shadow */
+        }
+
+        p {
+            font-size: 1.2rem; /* Slightly bigger for readability */
+            margin-top: 0.5rem;
         }
 
         section {
@@ -36,11 +44,17 @@
             padding: 1rem;
             margin: 1rem 0;
             border-radius: 8px;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .project:hover {
+            transform: scale(1.03); /* Slight pop-out on hover */
         }
 
         a {
             color: #76e096; /* Soft Green Link */
             text-decoration: none;
+            font-weight: bold;
         }
 
         a:hover {
@@ -71,12 +85,5 @@
             <p>Participated in Capture The Flag (CTF) competitions to develop ethical hacking skills. <a href="#">View Write-Ups</a></p>
         </div>
 
-        <div class="project">
-            <h3>Threat Detection System</h3>
-            <p>Built a basic Intrusion Detection System (IDS) using Snort to monitor and log suspicious activity. <a href="#">View Code</a></p>
-        </div>
-    </section>
-</body>
-
-</html>
+ 
 
